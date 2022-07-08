@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Form</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="container" style="background-color: #f9f6f1;height:150vh;">
+		<div class="wrapper">
+            <form action="" id="wizard">
+        		<!-- SECTION 1 -->
+                <h2></h2>
+                <section>
+                    <div class="inner">
+						<div class="image-holder" style="background-color: #d7caba;">
+							<!-- <div class="extra" style="background-color:red ;"></div> -->
+							<!-- <img src="images/form-wizard-1.jpg" alt=""> -->
+						</div>
+						<div class="form-content" >
+							<div class="form-header">
+								<h3>Marathon Registration Form</h3>
+							</div>
+							<p>Please fill with your details</p>
+							
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text" placeholder="First Name" class="form-control" name="name" id="name" required>
+									
+								</div>
+								<div class="form-holder">
+									
+									<input type="text" placeholder="Last Name" class="form-control" name="Last_name" id="Last_name" required/>
+								</div>
+							</div>
+							<div class="form-row">
+							<div class="form-holder">
+								
+								<input type="text"placeholder="Enter Age" class="form-control" name="age" id="age" required/>
+							</div>
+							<div class="form-holder">
+							
+								<input  type="date" placeholder="Enter DOB" class="form-control"id="birthday" name="birthday" required/>
+							</div>
+						</div>
+							<div class="form-holder">
+							
+								<input type="text" placeholder="Enter Address" class="form-control" name="address" id="address" required/>
+							</div>
+						   
+							
+								
+								<div class="form-holder">
+									
+									<div class="form-select" >
+										<select name="city" id="city" class="form-control"  required>
+											<option value="" disabled selected hidden>City</option>
+											
+											<option value="pune">Pune</option>
+											<option value="mumbai">Mumbai</option>
+										</select>
+										<span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+									</div>
+								</div>
+							
+							
+							<div class="form-holder">
+								
+								<input type="text"placeholder="Enter Pincode" class="form-control" name="pincode" id="pincode" required>
+							</div>
+							<div class="form-holder">
+								
+								<input type="text" placeholder="Enter Mobile No" class="form-control"name="mobile" id="mobile" required>
+							</div>
+							<!-- <div class="form-radio form-holder">
+								<label for="gender" class="radio-label">Gender :</label>
+								<div class="form-radio-item">
+									<input type="radio" name="gender"  id="male" checked>
+									<label for="male">Male</label>
+									<span class="check"></span>
+								</div>
+								<div class="form-radio-item">
+									<input type="radio" name="gender"  id="female">
+									<label for="female">Female</label>
+									<span class="check"></span>
+								</div>
+								<div class="form-radio-item">
+									<input type="radio" name="gender"  id="other">
+									<label for="other">Other</label>
+									<span class="check"></span>
+								</div>
+							</div> -->
+						  
+							<div class="form-holder">
+								
+								<input type="email" placeholder="Enter email" class="form-control" name="email" id="email" required />
+							</div>
+							<div class="form-holder">
+								
+								<input type="text" placeholder="Enter Emergency Person Name" class="form-control" name="emergency_person" id="emergency_person" required />
+							</div>
+							<div class="form-holder">
+								
+								<input type="text"  placeholder="Emergency Person Mobile No" class="form-control"name="emergency_person_number" id="emergency_person_number" required />
+							</div>
+							<div class="form-holder">
+								
+								<input type="text" placeholder="Relation with Emergency Contact Person" class="form-control" name="relation_emergency_person" id="relation_emergency_person" required />
+							</div>
+							<!-- <h1 style="text-align: center;background-color: rgb(0, 170, 255);margin-left: -79px;
+							margin-right: -93px;">Registration Payment</h1>
+							 <div class="form-group">
+								<label for="Registration_amount">Registration Amount :</label>
+								<input type="text" name="Registration_amount" id="Registration_amount" placeholder="$1000" required/>
+							</div>
+							 <div class="form-group">
+								<label for="payment_method">Payment Method :</label>
+								<div class="form-select">
+									<select name="course" id="course" required>
+										<option value=""></option>
+										<option value="Cash">Cash</option>
+										<option value="Credit-card">Credit-Card</option>
+										<option value="Google-pay">Google-Pay</option>
+									</select>
+									<span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+								</div><br><br>
+								<button type="button" class="button">Proceed</button>
+							</div>  -->
+							<div class="checkbox-circle mt-24">
+								<label>
+									<input type="checkbox" checked>  Please accept <a href="#">terms and conditions ?</a>
+									<span class="checkmark"></span>
+								</label>
+							</div>
+							<!-- <h1 style="text-align: center;background-color: rgb(0, 170, 255);margin-left: -79px;
+							margin-right: -93px;">Terms and Condition</h1>
+							<div class="form-group">
+								<input type="checkbox" id="tnc1" name="tnc1" value="tnc">
+								<label for="term1"> I Confirm that i am good shape,health and condition</label><br>
+								<input type="checkbox" id="tnc2" name="tnc1" value="tnc">
+								<label for="term2"> I don't have any medical condition or medical history that will affect my participation in this event.</label><br>
+								<input type="checkbox" id="tnc3" name="tnc1" value="tnc">
+								<label for="term3"> I acknowledge that this road race requires physical activity and there are possible risks and danger.</label><br><br>
+								<input type="checkbox" id="tnc4" name="tnc1" value="tnc">
+								<label for="term4">I release the road race event organizers for any responsibility in case of an accident, illness, or injury.</label><br><br>
+								<input type="checkbox" id="tnc5" name="tnc1" value="tnc">
+								<label for="term5">I confirm that all information in this registration form is accurate and true.</label><br><br>
+								
+								
+							   
+							</div> -->
+							<!-- <div class="form-group">
+								<p><label for="signature">Participant Signature:</label></p>
+							 <textarea id="signature" name="signature" rows="4" cols="50"></textarea>
+							</div>
+							<div class="form-group">
+								<p><label for="signdate">Date Of Sign:</label>
+								</p>
+								
+								<input type="date" id="signdate" name="signdate">
+							   
+	  
+							</div> -->
+							<div class="form-submit">
+								<input type="submit" value="Reset All" class="submit" name="reset" id="reset" />
+								<input type="submit" value="Submit Form" class="submit" name="submit" id="submit" />
+							</div>
+							<!-- <div class="form-row">
+								<div class="form-holder">
+									<input type="text" placeholder="First Name" class="form-control">
+								</div>
+								<div class="form-holder">
+									<input type="text" placeholder="Last Name" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text" placeholder="Your Email" class="form-control">
+								</div>
+								<div class="form-holder">
+									<input type="text" placeholder="Phone Number" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text" placeholder="Age" class="form-control">
+								</div>
+								<div class="form-holder" style="align-self: flex-end; transform: translateY(4px);">
+									<div class="checkbox-tick">
+										<label class="male">
+											<input type="radio" name="gender" value="male" checked> Male<br>
+											<span class="checkmark"></span>
+										</label>
+										<label class="female">
+											<input type="radio" name="gender" value="female"> Female<br>
+											<span class="checkmark"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="checkbox-circle">
+								<label>
+									<input type="checkbox" checked> Nor again is there anyone who loves or pursues or desires to obtaini.
+									<span class="checkmark"></span>
+								</label>
+							</div> -->
+						</div>
+					</div>
+                </section>
+
+				<!-- SECTION 2 -->
+                <!-- <h2></h2>
+                <section>
+                    <div class="inner">
+						<div class="image-holder">
+							<img src="images/form-wizard-2.jpg" alt="">
+						</div>
+						<div class="form-content">
+							<div class="form-header">
+								<h3>Registration</h3>
+							</div>
+							<p>Please fill with additional info</p>
+							<div class="form-row">
+								<div class="form-holder w-100">
+									<input type="text" placeholder="Address" class="form-control">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-holder">
+									<input type="text" placeholder="City" class="form-control">
+								</div>
+								<div class="form-holder">
+									<input type="text" placeholder="Zip Code" class="form-control">
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="select">
+									<div class="form-holder">
+										<div class="select-control">Your country</div>
+										<i class="zmdi zmdi-caret-down"></i>
+									</div>
+									<ul class="dropdown">
+										<li rel="United States">United States</li>
+										<li rel="United Kingdom">United Kingdom</li>
+										<li rel="Viet Nam">Viet Nam</li>
+									</ul>
+								</div>
+								<div class="form-holder"></div>
+							</div>
+						</div>
+					</div>
+                </section> -->
+
+                <!-- SECTION 3 -->
+                <!-- <h2></h2>
+                <section>
+                    <div class="inner">
+						<div class="image-holder">
+							<img src="images/form-wizard-3.jpg" alt="">
+						</div>
+						<div class="form-content">
+							<div class="form-header">
+								<h3>Registration</h3>
+							</div>
+							<p>Send an optional message</p>
+							<div class="form-row">
+								<div class="form-holder w-100">
+									<textarea name="" id="" placeholder="Your messagere here!" class="form-control" style="height: 99px;"></textarea>
+								</div>
+							</div>
+							<div class="checkbox-circle mt-24">
+								<label>
+									<input type="checkbox" checked>  Please accept <a href="#">terms and conditions ?</a>
+									<span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+                </section> -->
+            </form>
+		</div>
+	</div>
+		<!-- JQUERY -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+
+		<!-- JQUERY STEP -->
+		<script src="js/jquery.steps.js"></script>
+		<script src="js/main.js"></script>
+		
+</body>
+</html>
